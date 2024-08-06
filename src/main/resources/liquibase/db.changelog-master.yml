@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - include:
+      file: liquibase/changelog/changeset/01-create-place-table.yml
+  - include:
+      file: liquibase/changelog/changeset/02-create-sight-table.yml
+  - include:
+      file: liquibase/changelog/changeset/03-create-tourist-service-table.yml
+  - include:
+      file: liquibase/changelog/changeset/04-add-foreign-key-constraint-to-sight-id-at-place-table.yml
+  - include:
+      file: liquibase/changelog/changeset/05-create-tourist-service-sight-table.yml
+  - include:
+      file: liquibase/changelog/changeset/06-populate-place-table.yml
+  - include:
+      file: liquibase/changelog/changeset/07-populate-sight-table.yml
+  - include:
+      file: liquibase/changelog/changeset/08-populate-tourist-service-table.yml
+  - include:
+      file: liquibase/changelog/changeset/09-populate-tourist-service-sight-table.yml
+  - include:
+      file: liquibase/changelog/changeset/10-remove-unnecessary-columns-throughout-tables.yml

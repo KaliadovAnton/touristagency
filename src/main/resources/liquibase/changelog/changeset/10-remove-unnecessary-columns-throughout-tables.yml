@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: 10-remove-unnecessary-columns-throughout-tables
+      author: Anton Kaliadov
+      context: test,main
+      changes:
+        - dropColumn:
+            columnName: sight_id
+            schemaName: public
+            tableName: tourist_service
+        - dropColumn:
+            columnName: sight_id
+            schemaName: public
+            tableName: place
+        - dropColumn:
+            columnName: service_id
+            schemaName: public
+            tableName: sight

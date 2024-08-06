@@ -1,0 +1,90 @@
+databaseChangeLog:
+  - changeSet:
+      id: 07-populate-sight-table
+      author: Anton Kaliadov
+      context: main
+      changes:
+        - insert:
+            tableName: sight
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: sight_name
+                  value: Château de Boulogne
+              - column:
+                  name: creation_date
+                  value: 1525-01-01
+              - column:
+                  name: description
+                  value: Булонский замок, прозванный Мадрид или Мадридский замок, — ренессансная резиденция короля Франциска I в Булонском лесу под Парижем. Снесена в конце XVIII века.
+              - column:
+                  name: sight_type
+                  value: 0
+              - column:
+                  name: place_id
+                  value: 1
+        - insert:
+            tableName: sight
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: sight_name
+                  value: Versailles
+              - column:
+                  name: creation_date
+                  value: 1873-10-19
+              - column:
+                  name: description
+                  value: Верса́ль — дворцово-парковый ансамбль во Франции, бывшая резиденция французских королей в городе Версаль, ныне являющемся пригородом Парижа; центр туризма мирового значения.
+              - column:
+                  name: sight_type
+                  value: 1
+              - column:
+                  name: place_id
+                  value: 2
+        - insert:
+            tableName: sight
+            columns:
+              - column:
+                  name: id
+                  value: 3
+              - column:
+                  name: sight_name
+                  value: Colosseum
+              - column:
+                  name: creation_date
+                  value: 0080-01-01
+              - column:
+                  name: description
+                  value: Колизе́й, или амфитеатр Флавиев  — амфитеатр, памятник архитектуры Древнего Рима, наиболее известное и одно из самых грандиозных сооружений Древнего мира, сохранившихся до нашего времени.
+              - column:
+                  name: sight_type
+                  value: 3
+              - column:
+                  name: place_id
+                  value: 3
+        - insert:
+            tableName: sight
+            columns:
+              - column:
+                  name: id
+                  value: 4
+              - column:
+                  name: sight_name
+                  value: Basilica Papale di San Paolo
+              - column:
+                  name: creation_date
+                  value: 1854-01-01
+              - column:
+                  name: description
+                  value: Это одна из 4 великих папских базилик и лучших достопримечательностей Рима.
+              - column:
+                  name: sight_type
+                  value: 0
+              - column:
+                  name: place_id
+                  value: 3

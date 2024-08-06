@@ -1,0 +1,11 @@
+spring:
+  liquibase:
+    enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+caching:
+  spring:
+    weather:
+      requests:
+        TTL: 43200

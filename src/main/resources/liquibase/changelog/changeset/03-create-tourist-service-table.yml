@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03-create-tourist-service-table
+      author: Anton Kaliadov
+      context: test,main
+      changes:
+        - createTable:
+            tableName: tourist_service
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: service_name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: description
+                  type: varchar(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: sight_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_sight
+                    references: sight(id)
