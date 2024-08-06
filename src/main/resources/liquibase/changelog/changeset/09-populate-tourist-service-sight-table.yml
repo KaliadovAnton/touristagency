@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: 07-populate-tourist-service-sight-table
+      author: Anton Kaliadov
+      context: main
+      changes:
+        - insert:
+            tableName: tourist_service_sight
+            columns:
+              - column:
+                  name: tourist_service_id
+                  value: 1
+              - column:
+                  name: sight_id
+                  value: 3
+        - insert:
+            tableName: tourist_service_sight
+            columns:
+              - column:
+                  name: tourist_service_id
+                  value: 2
+              - column:
+                  name: sight_id
+                  value: 2
+        - insert:
+            tableName: tourist_service_sight
+            columns:
+              - column:
+                  name: tourist_service_id
+                  value: 2
+              - column:
+                  name: sight_id
+                  value: 4

@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: 04-add-foreign-key-constraint-to-sight-id-at-place-table
+      author: Anton Kaliadov
+      context: test,main
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: sight_id
+            baseTableName: place
+            constraintName: fk_sight
+            deferrable: true
+            initiallyDeferred: true
+            onDelete: CASCADE
+            onUpdate: RESTRICT
+            referencedColumnNames: id
+            referencedTableName: sight

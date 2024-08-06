@@ -1,0 +1,42 @@
+databaseChangeLog:
+  - changeSet:
+      id: 08-populate-tourist-service-table
+      author: Anton Kaliadov
+      context: main
+      changes:
+        - insert:
+            tableName: tourist_service
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: service_name
+                  value: Transfer
+              - column:
+                  name: description
+                  value: Мы предоставим транспорт для вашего путешествия.
+        - insert:
+            tableName: tourist_service
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: service_name
+                  value: Guide
+              - column:
+                  name: description
+                  value: Мы предоставим гида для вашего путешествия.
+        - insert:
+            tableName: tourist_service
+            columns:
+              - column:
+                  name: id
+                  value: 3
+              - column:
+                  name: service_name
+                  value: Insurance
+              - column:
+                  name: description
+                  value: Мы предоставим страховку для вашего путешествия.

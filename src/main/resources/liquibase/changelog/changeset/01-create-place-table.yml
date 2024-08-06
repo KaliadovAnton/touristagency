@@ -1,0 +1,38 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-create-place-table
+      author: Anton Kaliadov
+      context: test,main
+      changes:
+        - createTable:
+            tableName: place
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: place_name
+                  type: varchar(25)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: population
+                  type: BIGINT
+              - column:
+                  name: sight_id
+                  type: BIGINT
+              - column:
+                  name: latitude
+                  type: varchar(20)
+              - column:
+                  name: longitude
+                  type: varchar(20)
+              - column:
+                  name: metro
+                  type: bool
+                  constraints:
+                    nullable: false

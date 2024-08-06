@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 05-create-tourist-service-sight-table
+      author: Anton Kaliadov
+      context: test,main
+      changes:
+        - createTable:
+            tableName: tourist_service_sight
+            columns:
+              - column:
+                  name: tourist_service_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_tourist_service
+                    references: tourist_service(id)
+              - column:
+                  name: sight_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: fk_sight
+                    references: sight(id)
